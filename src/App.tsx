@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Experience from "./components/ui/Experience";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const handleSelectItem = (item: string) => console.log(item);
   return (
     <>
       <div>Hello World</div>
+      <Experience
+        onSelectItem={handleSelectItem}
+        items={["One", "Two", "Three"]}
+        heading='Numbers'
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
