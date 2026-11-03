@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "compilerOptions": {
     "target": "ES2017",
     "lib": [
@@ -38,5 +39,11 @@
   ],
   "exclude": [
     "node_modules"
+=======
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+>>>>>>> 64eeaba7f30514f1d9404cb7ed8f256042bb9ef3
   ]
 }
